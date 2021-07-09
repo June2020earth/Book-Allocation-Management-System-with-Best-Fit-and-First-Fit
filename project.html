@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>Book Allocation Management System</title>
+		<!--put css here i guess-->
+		<link rel="stylesheet" href="project.css">
+
+	</head>
+
+
+	<body>
+	<!--System Name-->
+	<div class="Heading">
+		<div class="title">
+		<h1 id="systemName">Dren Library Book Allocation System</h1>
+		</div>
+
+		<!--Menu-->
+		<div class="theory">
+			<div class="First-fit">
+				<p class="theoryTitle" id="firstTitle">First Fit</p>
+				<p class="description" id="firstDescription">First-fit algorithm is time efficient because no time is wasted on trying to find the most suitable shelf,
+					rather, the first shelf that can fit the books will be used even if it’s much larger in size.</p>
+			</div>
+		<br>
+			<div class="Best-fit">
+				<p class="theoryTitle" id="bestTitle">Best Fit</p>
+				<p class="description" id="bestDescription">Best-fit algorithm searches for that “best” shelf that ensures the smallest unused spaces.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="formEnter">
+		<div class="CategoryTitle">
+			<p class="categoryDesc" id="categoryDesc">Enter the categories and amount of the books</p>
+		</div>
+		<form class="inputForm">
+			<div class="amount">
+				<br><label>Amount: </label><br>
+				<input type="text" name="bookAmount" placeholder="eg. 30">
+			</div>
+			<div class="category">
+				<br><label>Category:</label><br>
+				<input type="text" name="bookCategory" placeholder="eg. Sci-Fi">
+			</div>
+			<br>
+		</form>
+			<button id="best-fit-btn" onclick="bestFit()">Best-Fit</button>
+			<button id="first-fit-btn" onclick="firstFit()">First-Fit</button>
+	</div>
+		<!--Shelves-->
+		<div class="shelves" id="shelves">
+			<div class="Shelve1" id="shelf1">
+				<p id="shelf1Title">Shelf1</p>
+				<p id="shelf1Desc">br>Category: None</p>
+			</div>
+			<div class="Shelve2" id="shelf2">
+				<p id="shelf2Title">Shelf2</p>
+				<p id="shelf2Desc"><br>Category: Sci-Fi</p>
+			</div>
+			<div class="Shelve3" id="shelf3">
+				<p id="shelf3Title">Shelf3</p>
+				<p id="shelf3Desc"><br>Category: Horror</p>
+			</div>
+			<div class="Shelve4" id="shelf4">
+				<p id="shelf4Title">Shelf4</p>
+				<p id="shelf4Desc"><br>Category: None</p>
+			</div>
+			<div class="Shelve5" id="shelf5">
+				<p id="shelf5Title">Shelf5</p>
+				<p id="shelf5Desc"><br>Category: Mystery</p>
+			</div>
+			<div class="Shelve6" id="shelf6">
+				<p id="shelf6Title">Shelf6</p>
+				<p id="shelf6Desc"><br>Category: Thriller</p>
+			</div>
+			<div class="Shelve7" id="shelf7">
+				<p id="shelf7Title">Shelf7</p>
+				<p id="shelf7Desc"><br>Category: None</p>
+			</div>
+			<div class="Shelve8" id="shelf8">
+				<p id="shelf8Title">Shelf8</p>
+				<p id="shelf8Desc"><br>Category: Fiction</p>
+			</div>
+			<div class="Shelve9" id="shelf9">
+				<p id="shelf9Title">Shelf9</p>
+				<p id="shelf9Desc"><br>Category: Non-Fiction</p>
+			</div>
+			<div class="Shelve10"id="shelf10" >
+				<p id="shelf10Title">Shelf10</p>
+				<p id="shelf10Desc"><br>Category: None</p>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<p id="box">box</p>
+		<div class="footer">
+		<div class="contributor">
+			<p>Contributor:</p>
+			<p>Tai Wen Jun</p>
+			<p>Brandon Liew Yi Quan</p>
+			<p>Mohamed Mustafa Alganzory</p>
+		</div>
+		<img src="assets/LOGO-UTM.png" id="UTMlogo" alt="">
+		</div>
+	</footer>
+	<script src="projects.js"></script>
+
+</html>
+
+
